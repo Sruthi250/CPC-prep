@@ -16,7 +16,7 @@ vector<vector<int> > Solution::threeSum(vector<int> &A) {
                 int a = A[start];
                 int b = A[end];
                 
-                if(a+b == abs(num)){
+                if(a+b == -(num)){
                     v.clear();
                     v.push_back(num);
                     v.push_back(a);
@@ -27,7 +27,7 @@ vector<vector<int> > Solution::threeSum(vector<int> &A) {
                     end--;
                 }
                 
-                else if(a+ b > abs(num)){
+                else if(a+ b > -(num)){
                     end--;
                 }
                 else{
